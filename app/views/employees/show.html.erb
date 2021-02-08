@@ -1,0 +1,11 @@
+<h1>Employee Profile</h1>
+
+<%= @employee.first_name%> <%= @employee.last_name %>
+<%= @employee.alias %>
+<%= @employee.title %>
+<%= @employee.office %>
+
+<%= image_tag @employee.img_url %>
+
+<%= link_to "Edit", edit_employee_path(@employee)%>
+<%= link_to "Back", employees_path%>
